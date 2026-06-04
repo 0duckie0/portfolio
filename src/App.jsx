@@ -123,7 +123,7 @@ const App = () => {
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="flex gap-5 items-center">
           <a href="https://github.com/0duckie0" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><GithubIcon size={20} /></a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><LinkedInIcon size={20} /></a>
+          <a href="https://www.linkedin.com/in/parth-chaudhari-706944284/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><LinkedInIcon size={20} /></a>
         </motion.div>
       </nav>
 
