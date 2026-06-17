@@ -263,7 +263,7 @@ const App = () => {
 
         {/* Download Resume */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-40 mb-10 flex justify-center">
-          <a href="/Parth_Chaudhari_Resume.pdf" download="Parth_Chaudhari_Resume.pdf" className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-white bg-[#111] rounded-full border border-gray-700 hover:border-cyan-500 transition-all duration-300 overflow-hidden shadow-2xl hover:shadow-cyan-500/20">
+          <a href="/Parth_Chaudhari_Resume.pdf.pdf" download="Parth_Chaudhari_Resume.pdf" className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-white bg-[#111] rounded-full border border-gray-700 hover:border-cyan-500 transition-all duration-300 overflow-hidden shadow-2xl hover:shadow-cyan-500/20">
             <div className="absolute inset-0 bg-linear-to-r from-purple-500/10 via-cyan-500/10 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <span className="relative z-10 flex items-center gap-3 text-lg">Download Resume <DownloadIcon size={22} className="group-hover:translate-y-1 transition-transform duration-300" /></span>
           </a>
