@@ -45,9 +45,9 @@ const research = [
 
 // NEW CERTIFICATIONS ARRAY
 const certifications = [
-  { name: "Introduction to Large Language Models", issuer: "Google Cloud", link: "YOUR_LINK_HERE" },
-  { name: "Prompt Design in Vertex AI", issuer: "Google Cloud", link: "YOUR_LINK_HERE" },
-  { name: "Agent Fundamentals", issuer: "Google Cloud", link: "YOUR_LINK_HERE" }
+  { name: "Introduction to Large Language Models", issuer: "Google Cloud", link: "https://www.skills.google/public_profiles/80eb5874-91ba-4fcb-a602-2101f65410d0/badges/24958771" },
+  { name: "Prompt Design in Vertex AI", issuer: "Google Cloud", link: "https://www.skills.google/public_profiles/80eb5874-91ba-4fcb-a602-2101f65410d0/badges/24941120" },
+  { name: "Agent Fundamentals", issuer: "Google Cloud", link: "https://www.skills.google/public_profiles/80eb5874-91ba-4fcb-a602-2101f65410d0/badges/24843753" }
 ];
 
 const projects = [
