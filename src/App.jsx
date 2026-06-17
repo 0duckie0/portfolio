@@ -43,6 +43,13 @@ const research = [
   }
 ];
 
+// NEW CERTIFICATIONS ARRAY
+const certifications = [
+  { name: "Introduction to Large Language Models", issuer: "Google Cloud", link: "YOUR_LINK_HERE" },
+  { name: "Prompt Design in Vertex AI", issuer: "Google Cloud", link: "YOUR_LINK_HERE" },
+  { name: "Agent Fundamentals", issuer: "Google Cloud", link: "YOUR_LINK_HERE" }
+];
+
 const projects = [
   {
     title: "RiskSight",
@@ -174,6 +181,36 @@ const App = () => {
                 <p className="text-cyan-400 font-medium mb-3">{item.achievement}</p>
                 <p className="text-gray-400 text-sm">{item.description}</p>
               </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* NEW SECTION: Certifications & Milestones */}
+        <div className="mt-32">
+          <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-2xl font-bold text-white mb-8 flex items-center gap-4">
+            <span className="h-px w-12 bg-gray-700"></span>Certifications & Milestones<span className="h-px flex-1 bg-gray-700"></span>
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {certifications.map((cert, index) => (
+              <motion.a 
+                key={index} 
+                href={cert.link} 
+                target="_blank" 
+                rel="noreferrer"
+                initial={{ opacity: 0, scale: 0.95 }} 
+                whileInView={{ opacity: 1, scale: 1 }} 
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="p-6 rounded-xl bg-[#111]/40 border border-gray-800/60 hover:border-cyan-500/50 transition-all group flex items-start gap-4"
+              >
+                <div className="p-3 bg-gray-900 rounded-lg text-cyan-400 group-hover:text-white transition-colors border border-gray-800">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+                </div>
+                <div>
+                  <h3 className="text-white font-bold mb-1 text-sm">{cert.name}</h3>
+                  <p className="text-gray-500 text-xs font-mono">{cert.issuer}</p>
+                </div>
+              </motion.a>
             ))}
           </div>
         </div>
